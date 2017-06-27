@@ -1,0 +1,17 @@
+{
+  "name": "markup-template",
+  "description": "Markup template",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/YaroslavZhymkov/lemon.school",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.6.0"
+  }
+}

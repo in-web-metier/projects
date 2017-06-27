@@ -1,0 +1,57 @@
+@font-face {
+font-family: 'Museo Sans';
+font-style: normal;
+font-weight: 100;
+src: local('Museo Sans Cyrl 100'), url('MuseoSansCyrl100.otf') format('opentype');
+}
+
+@font-face {
+font-family: 'Museo Sans';
+font-style: normal;
+font-weight: 300;
+src: local('Museo Sans Cyrl 300'), url('MuseoSansCyrl300.otf') format('opentype');
+}
+
+@font-face {
+font-family: 'Museo Sans';
+font-style: normal;
+font-weight: 500;
+src: local('Museo Sans Cyrl 500'), url('MuseoSansCyrl500.otf') format('opentype');
+}
+
+@font-face {
+font-family: 'Museo Sans';
+font-style: normal;
+font-weight: 700;
+src: local('Museo Sans Cyrl 700'), url('MuseoSansCyrl700.otf') format('opentype');
+}
+
+@font-face {
+font-family: 'Museo Sans';
+font-style: normal;
+font-weight: 900;
+src: local('Museo Sans Cyrl 900'), url('MuseoSansCyrl900.otf') format('opentype');
+}
+
+
+@font-face {
+font-family: 'Museo';
+font-style: normal;
+font-weight: 500;
+src: local('Museo Cyrl 500'), url('MuseoCyrl500.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Museo';
+font-style: normal;
+font-weight: 700;
+src: local('Museo Cyrl 700'), url('MuseoCyrl700.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Museo';
+font-style: normal;
+font-weight: 900;
+src: local('Museo Cyrl 900'), url('MuseoCyrl900.woff') format('woff');
+}
+@font-face{font-family:EffraRegular;font-style:normal;font-weight:400;src:url(EffraRegular/EffraRegular.eot?#iefix) format("embedded-opentype"),url(EffraRegular/EffraRegular.woff) format("woff"),url(EffraRegular/EffraRegular.ttf) format("truetype")}

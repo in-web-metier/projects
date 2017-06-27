@@ -1,0 +1,973 @@
+@charset "UTF-8";
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box;
+  outline: none; }
+
+*::before, *::after {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url("../fonts/OpenSans-Bold.ttf"); }
+
+@font-face {
+  font-family: OpenSans-BoldItalic;
+  src: url("../fonts/OpenSans-BoldItalic.ttf"); }
+
+@font-face {
+  font-family: OpenSans-ExtraBold;
+  src: url("../fonts/OpenSans-ExtraBold.ttf"); }
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url("../fonts/OpenSans-Regular.ttf"); }
+
+@font-face {
+  font-family: OpenSans-SemiBold;
+  src: url("../fonts/OpenSans-Semibold.ttf"); }
+
+@font-face {
+  font-family: OpenSans-SemiBoldItalic;
+  src: url("../fonts/OpenSans-SemiboldItalic.ttf"); }
+
+.container .screen1 .inner .content:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.container .screen1 .inner, .container .screen2 .inner, .container .screen3 .inner, .container .screen4 .inner, .container .screen5 .inner, .container .screen6 .inner, .container .screen7 .inner, .container .screen8 .inner, .container .screen9 .inner {
+  width: 960px;
+  margin: 0 auto; }
+
+.container .screen1 .inner .screen1-title .over-title, .container .screen1 .inner .content .form .form-title, .container .screen8 .inner .content .form .form-title, .container .screen9 .inner .title,
+.container .screen1 .inner .screen1-title .title,
+.container .screen5 .inner .title,
+.container .screen7 .inner .title,
+.container .screen8 .inner .title {
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  font-family: "OpenSans-Bold"; }
+
+.container .screen1 .inner .screen1-title .title, .container .screen5 .inner .title, .container .screen7 .inner .title, .container .screen8 .inner .title {
+  font-size: 30px;
+  font-family: "OpenSans-ExtraBold";
+  line-height: 37px; }
+
+.container .screen1 .inner .content .form fieldset .form-content .form-left .btn, .container .screen3 .inner .btn, .container .screen8 .inner .content .form fieldset .form-content .form-left .btn {
+  background: #df0011;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: all .5s;
+  width: 100%;
+  max-width: 290px;
+  height: 46px;
+  margin: 0 auto 10px;
+  text-transform: uppercase;
+  font-family: "OpenSans-Regular";
+  border-radius: 2px;
+  display: block; }
+  .container .screen1 .inner .content .form fieldset .form-content .form-left .btn:hover, .container .screen3 .inner .btn:hover, .container .screen8 .inner .content .form fieldset .form-content .form-left .btn:hover {
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.1); }
+.btn-link {
+  text-decoration: none;
+  text-align: center;
+  line-height: 46px;
+}
+
+.container {
+  width: 100%; }
+  .container .screen1 {
+    width: 100%;
+    background-image: url("../images/bg-main.jpg");
+    background-size: cover;
+    padding: 20px 0; }
+    .container .screen1 .inner .screen1-title {
+      padding: 0 90px; }
+    .container .screen1 .inner .content .profits {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      padding: 25px 0 30px; }
+      .container .screen1 .inner .content .profits .product-img {
+        margin-right: 55px; }
+        .container .screen1 .inner .content .profits .product-img img {
+          width: 100%;
+          margin-top: -55px;}
+      .container .screen1 .inner .content .profits .profits-list .profits-list__item {
+        font-size: 21px;
+        color: #fff;
+        font-family: "OpenSans-SemiBold";
+        list-style: none;
+        line-height: 40px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center; }
+        .container .screen1 .inner .content .profits .profits-list .profits-list__item:before {
+          content: "";
+          display: block;
+          width: 22px;
+          height: 22px;
+          background-image: url("../images/list-icon.png");
+          background-repeat: no-repeat;
+          margin-right: 12px; }
+    .container .screen1 .inner .content .form {
+      width: 585px;
+      float: right; }
+      .container .screen1 .inner .content .form .form-title {
+        font-family: "OpenSans-ExtraBold";
+        line-height: 27px;
+        font-size: 21px;
+        letter-spacing: .5px; }
+      .container .screen1 .inner .content .form fieldset {
+        margin-top: 15px;
+        border: 3px solid #fade35;
+        padding: 15px 15px 5px; }
+        .container .screen1 .inner .content .form fieldset legend {
+          text-align: center;
+          color: #fff;
+          font-family: "OpenSans-SemiBold";
+          text-transform: uppercase;
+          padding: 0 15px; }
+          .container .screen1 .inner .content .form fieldset legend .form-subtitle {
+            line-height: 21px;
+          }
+        .container .screen1 .inner .content .form fieldset .form-content {
+          width: 100%;
+          padding: 0 0 0 20px;
+          display: -ms-flexbox;
+          display: flex; }
+          .container .screen1 .inner .content .form fieldset .form-content .form-left {
+            width: 55%; }
+            .container .screen1 .inner .content .form fieldset .form-content .form-left input, .container .screen1 .inner .content .form fieldset .form-content .form-left button {
+              width: 100%;
+              height: 46px;
+              margin-bottom: 10px;
+              text-align: center;
+              text-transform: uppercase;
+              font-family: "OpenSans-Regular";
+              color: #000;
+              border: 1px solid #959595;
+              border-radius: 2px; }
+            .container .screen1 .inner .content .form fieldset .form-content .form-left input::-webkit-input-placeholder {
+              color: #000;
+              opacity: 1;
+              transition: opacity 0.5s ease; }
+            .container .screen1 .inner .content .form fieldset .form-content .form-left input::-moz-placeholder {
+              color: #000;
+              opacity: 1;
+              transition: opacity 0.5s ease; }
+            .container .screen1 .inner .content .form fieldset .form-content .form-left input:-moz-placeholder {
+              color: #000;
+              opacity: 1;
+              transition: opacity 0.5s ease; }
+            .container .screen1 .inner .content .form fieldset .form-content .form-left input:-ms-input-placeholder {
+              color: #000;
+              opacity: 1;
+              transition: opacity 0.5s ease; }
+            .container .screen1 .inner .content .form fieldset .form-content .form-left input:focus::-webkit-input-placeholder {
+              opacity: 0; }
+            .container .screen1 .inner .content .form fieldset .form-content .form-left input:focus::-moz-placeholder {
+              opacity: 0; }
+            .container .screen1 .inner .content .form fieldset .form-content .form-left input:focus:-moz-placeholder {
+              opacity: 0; }
+            .container .screen1 .inner .content .form fieldset .form-content .form-left input:focus:-ms-input-placeholder {
+              opacity: 0; }
+          .container .screen1 .inner .content .form fieldset .form-content .form-right {
+            width: 45%;
+            color: #fff; }
+            .container .screen1 .inner .content .form fieldset .form-content .form-right .form-price-title {
+              font-family: "OpenSans-SemiBold";
+              font-size: 21px;
+              display: block;
+              text-align: center;
+              padding-bottom: 5px; }
+            .container .screen1 .inner .content .form fieldset .form-content .form-right .form-price {
+              display: block;
+              text-align: center;
+              font-family: "OpenSans-ExtraBold";
+              font-size: 44px;
+              padding-bottom: 25px; }
+            .container .screen1 .inner .content .form fieldset .form-content .form-right .form-price_after {
+              position: relative; }
+              .container .screen1 .inner .content .form fieldset .form-content .form-right .form-price_after:after {
+                content: "";
+                width: 90%;
+                height: 3px;
+                position: absolute;
+                left: 5%;
+                top: 35%;
+                background: #000; }
+  .container .screen2 {
+    width: 100%;
+    background: #000; }
+    .container .screen2 .inner .statistic {
+      display: -ms-flexbox;
+      display: flex; }
+      .container .screen2 .inner .statistic img {
+        margin: 0 17px 0 50px; }
+      .container .screen2 .inner .statistic .statistic-par {
+        display: block;
+        padding-top: 45px;
+        font-family: "OpenSans-ExtraBold";
+        color: #fff;
+        font-size: 30px;
+        line-height: 34px;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
+        .container .screen2 .inner .statistic .statistic-par span {
+          font-size: 24px; }
+  .container .screen3 {
+    width: 100%; }
+    .container .screen3 .inner .screen3-top {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .container .screen3 .inner .screen3-top .screen3-par:first-child {
+        padding: 37px 10px 37px 0;
+      }
+      .container .screen3 .inner .screen3-top .screen3-par {
+        font-family: "OpenSans-Regular";
+        font-size: 16px;
+        display: block;
+        padding: 37px 0 37px 13px;
+        line-height: 20px;
+        width: 38%; }
+      .container .screen3 .inner .screen3-top img {
+        margin-top: -65px; }
+    .container .screen3 .inner .screen3-bottom {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -ms-flex-align: center;
+      align-items: center; }
+      .container .screen3 .inner .screen3-bottom .screen3-title {
+        font-family: "OpenSans-Bold";
+        color: #000;
+        font-size: 21px;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 26px; }
+    .container .screen3 .inner .btn {
+      margin-top: 10px; }
+  .container .screen4 {
+    width: 100%;
+    background-image: url("../images/bg2.jpg");
+    background-size: cover;
+    height: 300px; }
+    .container .screen4 .inner {
+      display: -ms-flexbox;
+      display: flex; }
+      .container .screen4 .inner .screen4-left {
+        width: 315px;
+        margin-left: -15px; }
+        .container .screen4 .inner .screen4-left img {
+          display: block;
+          margin-top: -27px;
+          width: 315px; }
+      .container .screen4 .inner .screen4-right {
+        padding: 26px 0 0 15px; }
+        .container .screen4 .inner .screen4-right .screen4-par {
+          display: block;
+          font-size: 17.5px;
+          font-family: "OpenSans-Regular";
+          margin-bottom: 19px;
+          position: relative;
+          line-height: 22px; }
+          .container .screen4 .inner .screen4-right .screen4-par:before, .container .screen4 .inner .screen4-right .screen4-par:after {
+            content: "“";
+            position: absolute;
+            font-size: 65px; }
+          .container .screen4 .inner .screen4-right .screen4-par:before {
+            top: 0;
+            right: calc(100% + 5px); }
+          .container .screen4 .inner .screen4-right .screen4-par:after {
+            bottom: -23px;
+            right: 0; }
+        .container .screen4 .inner .screen4-right .screen4-par_bold {
+          font-size: 18px;
+          font-family: "OpenSans-Bold"; }
+  .container .screen5 {
+    width: 100%;
+    background-image: url("../images/bg3.jpg");
+    background-size: cover;
+    padding-top: 43px;
+    max-height: 340px; }
+    .container .screen5 .inner {
+      padding-left: 74px; }
+      .container .screen5 .inner .title {
+        font-size: 36px;
+        padding-bottom: 35px; }
+      .container .screen5 .inner .how {
+        display: -ms-flexbox;
+        display: flex; }
+        .container .screen5 .inner .how .how-left {
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+          flex-direction: column; }
+          .container .screen5 .inner .how .how-left .how-left-top,
+          .container .screen5 .inner .how .how-left .how-left-bottom {
+            display: -ms-flexbox;
+            display: flex;
+            margin-bottom: 30px; }
+            .container .screen5 .inner .how .how-left .how-left-top .how-item,
+            .container .screen5 .inner .how .how-left .how-left-bottom .how-item {
+              color: #fff;
+              width: 50%;
+              padding-right: 30px; }
+            .container .screen5 .inner .how .how-left .how-left-top .how-item:last-child,
+            .container .screen5 .inner .how .how-left .how-left-bottom .how-item:last-child {
+              padding-right: 0;
+            }
+              .container .screen5 .inner .how .how-left .how-left-top .how-item .how-num,
+              .container .screen5 .inner .how .how-left .how-left-bottom .how-item .how-num {
+                float: left;
+                width: 35px;
+                height: 35px;
+                color: #000;
+                text-align: center;
+                line-height: 35px;
+                border-radius: 50%;
+                background: #fade35;
+                margin: 0 7px 33px 0;
+                font-family: "OpenSans-ExtraBold";
+                font-size: 24px; }
+              .container .screen5 .inner .how .how-left .how-left-top .how-item .how-desc,
+              .container .screen5 .inner .how .how-left .how-left-bottom .how-item .how-desc {
+                font-size: 18px;
+                line-height: 22px;
+                font-family: "OpenSans-Regular"; }
+        .container .screen5 .inner .how .how-right {
+          margin-top: -52px;
+          margin-right: -30px;}
+  .container .screen6 {
+    width: 100%;
+    background-image: url("../images/bg4.jpg");
+    background-size: cover;
+    max-height: 292px; }
+    .container .screen6 .inner .screen6-img {
+      display: block;
+      text-align: center;
+      position: relative;
+      top: -21px; }
+  .container .screen7 {
+    width: 100%; }
+    .container .screen7 .inner .title {
+      font-size: 36px;
+      color: #000;
+      padding: 10px 0 35px; }
+    .container .screen7 .inner .comments {
+      width: 100%; }
+      .container .screen7 .inner .comments .comments-item {
+        display: -ms-flexbox;
+        display: flex; }
+        .container .screen7 .inner .comments .comments-item .comments-left {
+          margin-right: 9px; }
+        .container .screen7 .inner .comments .comments-item .comments-right {
+          padding-bottom: 15px; }
+          .container .screen7 .inner .comments .comments-item .comments-right:after {
+            content: "";
+            display: block;
+            width: 60%;
+            border-bottom: 1px dashed #000;
+            margin-top: 15px; }
+          .container .screen7 .inner .comments .comments-item .comments-right .comment-name {
+            font-size: 18px;
+            font-family: "OpenSans-SemiBoldItalic";
+            display: block;
+            margin-bottom: 10px; }
+          .container .screen7 .inner .comments .comments-item .comments-right .comment-title {
+            font-size: 21px;
+            font-family: "OpenSans-BoldItalic";
+            display: block;
+            margin-bottom: 12px; }
+          .container .screen7 .inner .comments .comments-item .comments-right .comment-par {
+            font-size: 18px;
+            line-height: 21px;
+            font-family: "OpenSans-Regular"; }
+      .container .screen7 .inner .comments .comments-item:last-child .comments-right:after {
+        border: none; }
+      .container .screen7 .inner .comments .comments-item:last-child .comments-right .comment-par {
+        display: -ms-flexbox;
+        display: flex; }
+        .container .screen7 .inner .comments .comments-item:last-child .comments-right .comment-par img {
+          margin-left: 20px; }
+  .container .screen8 {
+    width: 100%;
+    background-image: url("../images/bg-form.jpg");
+    padding-top: 18px;
+    max-height: 485px;
+    overflow: hidden; }
+    .container .screen8 .inner .title {
+      padding: 12px 0;
+      font-size: 24px;
+      color: #000;
+      background-image: url("../images/bg_title.png");
+      background-repeat:no-repeat;
+      line-height: 30px;}
+      .container .screen8 .inner .title span {
+        font-size: 28px; }
+    .container .screen8 .inner .content {
+      display: -ms-flexbox;
+      display: flex;
+      padding-top: 20px; }
+      .container .screen8 .inner .content .scr8-img-left {
+        margin-left: -73px; }
+      .container .screen8 .inner .content .scr8-img-left,
+      .container .screen8 .inner .content .scr8-img-right {
+        margin-top: -57px;
+      }
+      .container .screen8 .inner .content .form .form-title {
+        font-family: "OpenSans-Bold";
+        text-transform: none; }
+      .container .screen8 .inner .content .form fieldset {
+        margin: 15px 20px;
+        border: 3px solid #fade35;
+        padding: 15px 15px 5px; }
+        .container .screen8 .inner .content .form fieldset legend {
+          text-align: center;
+          color: #fff;
+          font-family: "OpenSans-SemiBold";
+          text-transform: uppercase;
+          padding: 0 15px; }
+          .container .screen8 .inner .content .form fieldset legend .form-subtitle {
+            line-height: 21px;
+          }
+        .container .screen8 .inner .content .form fieldset .form-content {
+          width: 100%;
+          padding: 0 0 0 20px;
+          display: -ms-flexbox;
+          display: flex; }
+          .container .screen8 .inner .content .form fieldset .form-content .form-left {
+            width: 55%; }
+            .container .screen8 .inner .content .form fieldset .form-content .form-left input, .container .screen8 .inner .content .form fieldset .form-content .form-left button {
+              width: 100%;
+              height: 46px;
+              margin-bottom: 10px;
+              text-align: center;
+              text-transform: uppercase;
+              font-family: "OpenSans-Regular";
+              color: #000;
+              border: 1px solid #959595;
+              border-radius: 2px; }
+            .container .screen8 .inner .content .form fieldset .form-content .form-left input::-webkit-input-placeholder {
+              color: #000;
+              opacity: 1;
+              transition: opacity 0.5s ease; }
+            .container .screen8 .inner .content .form fieldset .form-content .form-left input::-moz-placeholder {
+              color: #000;
+              opacity: 1;
+              transition: opacity 0.5s ease; }
+            .container .screen8 .inner .content .form fieldset .form-content .form-left input:-moz-placeholder {
+              color: #000;
+              opacity: 1;
+              transition: opacity 0.5s ease; }
+            .container .screen8 .inner .content .form fieldset .form-content .form-left input:-ms-input-placeholder {
+              color: #000;
+              opacity: 1;
+              transition: opacity 0.5s ease; }
+            .container .screen8 .inner .content .form fieldset .form-content .form-left input:focus::-webkit-input-placeholder {
+              opacity: 0; }
+            .container .screen8 .inner .content .form fieldset .form-content .form-left input:focus::-moz-placeholder {
+              opacity: 0; }
+            .container .screen8 .inner .content .form fieldset .form-content .form-left input:focus:-moz-placeholder {
+              opacity: 0; }
+            .container .screen8 .inner .content .form fieldset .form-content .form-left input:focus:-ms-input-placeholder {
+              opacity: 0; }
+          .container .screen8 .inner .content .form fieldset .form-content .form-right {
+            width: 45%;
+            color: #fff; }
+            .container .screen8 .inner .content .form fieldset .form-content .form-right .form-price-title {
+              font-family: "OpenSans-SemiBold";
+              font-size: 21px;
+              display: block;
+              text-align: center;
+              padding-bottom: 5px; }
+            .container .screen8 .inner .content .form fieldset .form-content .form-right .form-price {
+              display: block;
+              text-align: center;
+              font-family: "OpenSans-ExtraBold";
+              font-size: 44px;
+              padding-bottom: 25px; }
+            .container .screen8 .inner .content .form fieldset .form-content .form-right .form-price_after {
+              position: relative; }
+              .container .screen8 .inner .content .form fieldset .form-content .form-right .form-price_after:after {
+                content: "";
+                width: 90%;
+                height: 3px;
+                position: absolute;
+                left: 5%;
+                top: 35%;
+                background: #fff; }
+  .container .screen9 {
+    width: 100%;
+    background: #0f0f0f;
+    padding: 30px 0 13px; }
+    .container .screen9 .inner .how {
+      padding: 25px 0 40px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .container .screen9 .inner .how .how-item .how-img {
+        width: 54px;
+        height: 52px;
+        background-image: url("../images/sprite.png");
+        margin: 0 auto;
+        margin-bottom: 26px; }
+      .container .screen9 .inner .how .how-item:nth-child(3) .how-img {
+        background-position: 162px 0; }
+      .container .screen9 .inner .how .how-item:nth-child(5) .how-img {
+        background-position: 108px 0; }
+      .container .screen9 .inner .how .how-item:nth-child(7) .how-img {
+        background-position: 54px 0; }
+      .container .screen9 .inner .how .how-item .how-desc {
+        font-size: 18px;
+        color: #fff;
+        font-family: "OpenSans-Regular";
+        display: block;
+        text-align: center; }
+      .container .screen9 .inner .how .how-arrow {
+        width: 15px;
+        height: 25px;
+        background-image: url("../images/arrow.png"); }
+    .container .screen9 .inner .copyright {
+      display: block;
+      text-align: center;
+      font-size: 12px;
+      color: #fff;
+      font-family: "OpenSans-Regular"; }
+
+
+@media (max-width: 1850px) {
+  .container .screen1 {
+    background-position: -100px 0; } }
+
+@media (max-width: 1650px) {
+  .container .screen1 {
+    background-position: -200px 0; } }
+
+@media (max-width: 1450px) {
+  .container .screen1 {
+    background-position: -300px 0; } }
+
+@media (max-width: 1250px) {
+  .container .screen1 {
+    background-position: -400px 0; } }
