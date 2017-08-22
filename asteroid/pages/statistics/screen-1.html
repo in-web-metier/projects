@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<!-- 
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.2
+Version: 3.2.0
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+<meta charset="utf-8"/>
+<title>Statistics</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta content="" name="description"/>
+<meta content="" name="author"/>
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css">
+<link href="../../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/global/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="../../assets/global/plugins/bootstrap-tagsinput/css/bootstrap-tagsinput.css" rel="stylesheet" type="text/css">
+<link href="../../assets/global/plugins/nouislider/nouislider.css" rel="stylesheet">
+<link href="../../assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.css" rel="stylesheet">
+<link href="../../assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet">
+
+
+<!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN THEME STYLES -->
+<link href="../../assets/global/css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css">
+<link href="../../assets/global/css/plugins.css" rel="stylesheet" type="text/css">
+<link href="../../assets/admin/layout3/css/layout.css" rel="stylesheet" type="text/css">
+<link href="../../assets/admin/layout3/css/themes/blue-steel.css" rel="stylesheet" type="text/css" id="style_color">
+
+
+
+<link rel="stylesheet" type="text/css" href="../../assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.css" />
+
+<link rel="stylesheet" type="text/css" href="../../assets/global/plugins/toggle-switch/toggle-switch.css" />
+
+<link href="../../assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet"/>
+
+
+<link href="../../assets/global/plugins/dropzone/css/basic.css" rel="stylesheet"/>
+<link href="../../assets/global/plugins/dropzone/css/dropzone.css" rel="stylesheet"/>
+
+<link href="../../assets/global/plugins/bootstrap-select2/bootstrap-select2.css" rel="stylesheet" />
+
+<link href="../../assets/admin/layout3/css/custom.css" rel="stylesheet" type="text/css">
+<!-- END THEME STYLES -->
+
+
+
+<link rel="shortcut icon" href="favicon.ico"/>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<!-- DOC: Apply "page-header-menu-fixed" class to set the mega menu fixed  -->
+<!-- DOC: Apply "page-header-top-fixed" class to set the top menu fixed  -->
+<body>
+<!-- BEGIN HEADER -->
+<div class="page-header">
+	<!-- BEGIN HEADER TOP -->
+	<div class="page-header-top">
+		<div class="container">
+			<!-- BEGIN LOGO -->
+			<div class="page-logo">
+				<a class="logo-font" href="index.html">
+				asteroid
+				</a>
+			</div>
+			<!-- END LOGO -->
+			<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+			<a href="javascript:;" class="menu-toggler"></a>
+			<!-- END RESPONSIVE MENU TOGGLER -->
+			<!-- BEGIN TOP NAVIGATION MENU -->
+			<div class="top-menu">
+				<ul class="nav navbar-nav pull-right">
+					<!-- BEGIN NOTIFICATION DROPDOWN -->
+					<li class="create-new-capm-li">
+						<a class="btn header-create-camp-btn green-meadow">Create new campaign</a>
+					</li>
+					<li class="text-center">
+						<p class="balance">Your balance</p>
+						<p class="text-primary balance-count">$0</p>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon-user icon-big-custom"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon-bell icon-big-custom"></span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="icon-power icon-big-custom"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- END TOP NAVIGATION MENU -->
+		</div>
+	</div>
+	<!-- END HEADER TOP -->
+	<!-- BEGIN HEADER MENU -->
+	<div class="page-header-menu">
+		<div class="container">
+			<!-- BEGIN MEGA MENU -->
+			<!-- DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background -->
+			<!-- DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the dropdown opening on mouse hover -->
+			<div class="hor-menu ">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="index.html">Campaigns</a>
+					</li>
+					<li>
+						<a href="index.html">Statistics</a>
+					</li>
+					<li>
+						<a href="index.html">Audience</a>
+					</li>
+				</ul>
+			</div>
+			<!-- END MEGA MENU -->
+		</div>
+	</div>
+	<!-- END HEADER MENU -->
+</div>
+<!-- END HEADER -->
+<!-- BEGIN PAGE CONTAINER -->
+<div class="page-container">
+	<!-- BEGIN PAGE HEAD -->
+	<div class="page-head">
+		<div class="container">
+			<!-- BEGIN PAGE TITLE -->
+			<div class="page-title">
+				<h1>Statistics</h1>
+			</div>
+		</div>
+	</div>
+	<!-- END PAGE HEAD -->
+	<!-- BEGIN PAGE CONTENT -->
+	<div class="page-content">
+		<div class="container">
+			<!-- BEGIN PAGE CONTENT INNER -->
+			<div class="row">
+				<div class="col-md-3 text-center">
+					<div class="portlet light left-menu-block">
+						<div class="portlet-title">
+							<div class="caption caption-md">
+								<i class="icon-bar-chart theme-font hide"></i>
+								<h1 class="caption-subject theme-font bold uppercase inline-block">FILTER </h1>
+							</div>
+						</div>
+						<div class="portlet-body text-left">
+							<div class="menu-element head-element">
+								<h3 class="left-menu-header">Date</h3>
+								<ul class="left-menu">
+									<li>Today</li>
+									<li>Yesterday</li>
+									<li>This week</li>
+									<li>Last 14 days</li>
+									<li>This month</li>
+									<li>All time</li>
+									<li class="daterange">
+										Date range
+									</li>
+								</ul>							
+							</div>
+							<div class="menu-element more-active" id="campaing">
+								
+								<h3 class="left-menu-header">Campaing<i class="fa fa-plus icon-list-status" aria-hidden="true"></i></h3>
+
+								<div class="left-menu-option-block">
+									<div class="bottom-border"></div>
+									<ul class="left-menu most-popular">
+										<li>Yesterday</li>
+										<li>This week</li>
+										<li>Last 14 days</li>
+										<li>This month</li>
+										<li>All time</li>
+									</ul>
+									<div class="left-menu-search">
+										<input type="text">
+										<i class="fa fa-search" aria-hidden="true"></i>
+										<!--<i class="fa fa-times" aria-hidden="true"></i>	
+										<i class="fa fa-spinner fa-pulse" aria-hidden="true"></i>-->	
+									</div>
+									<ul class="left-menu full-list">
+
+										<li class="subcategory">Today</li>
+										<li>Yesterday</li>
+										<li>Yesterday</li>
+										<li>Yesterday</li>
+										<li>Yesterday</li>
+										<li>Yesterday</li>
+										<li>Yesterday</li>
+										<li>Yesterday</li>
+										<li>Yesterday</li>
+										<li>Yesterday</li>
+										<li>Yesterday</li>
+										<li>Yesterday</li>
+										<li>Yesterday</li>
+										<li>Yesterday</li>
+										<li>Yesterday</li>
+										<li>Yesterday</li>
+										<li>Yesterday</li>
+
+									</ul>
+									<a class="btn btn-default btn-left-menu">More</a>
+								</div>
+							</div>
+							<div class="menu-element">
+								<h3 class="left-menu-header">Links</h3>
+							</div>
+							<div class="menu-element">
+								<h3 class="left-menu-header">Region</h3>
+							</div>
+							<div class="menu-element">
+								<h3 class="left-menu-header">Audience</h3>
+							</div>
+							<div class="menu-element">
+								<h3 class="left-menu-header">Offer</h3>
+							</div>
+							<div class="menu-element">
+								<h3 class="left-menu-header">Stream</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9 text-center">
+					<div class="portlet light statistics-block">
+						<div class="portlet-title">
+							<div class="row">
+								<div class="col-md-6 text-left">
+									<div class="caption caption-md">
+										<i class="icon-bar-chart theme-font hide"></i>
+										<h4 class="caption-subject theme-font bold uppercase inline-block">DYNAMICS BY DAYS </h4>
+									</div>
+								</div>
+								<div class="col-md-6 text-right">
+									View: <a class="a-option active">Chart</a><a class="a-option">Data</a>
+									<div class="btn-group dropdown">
+						     		   <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" style="box-shadow: none;">
+						    		        <span class="icon-equalizer icon-custom"></span>
+						     		   </a>
+						 		       <div class="dropdown-menu pull-right position-absolute form-group dropup-custom">
+						   		    		<div class="row">
+						   						<div class="col-md-6 form-group">
+								                    <li>
+								                        <label>
+															<input type="checkbox" class="">
+															CR2 (All)
+														</label>
+								                    </li>
+					                                <li>
+					                                    <label>
+															<input type="checkbox" class="">
+															CR2 (Deposites)
+														</label>
+					                                </li>
+			                                    </div>
+			                                   	<div class="col-md-6 form-group">
+													<li>
+														<label>
+															<input type="checkbox" class="">
+															CTR CR2 (Other target)
+														</label>
+				                                    </li>
+				                                    <li>
+				                                        <label>
+															<input type="checkbox" class="">
+															Other
+														</label>
+				                                    </li>
+				                                </div> 
+				                            </div>
+		                                    <div class="row">
+		                                        <div class="col-md-6">
+							                       	<button class="btn btn-primary">Save</button>
+						                       	</div>
+						                        <div class="col-md-6">
+						                            <button class="btn btn-default">Cancel</button>
+						                       	</div>
+						                    </div>
+						                </div>		
+			                       </div>	
+		                        </div>
+		                    </div>
+						</div>
+						<div class="portlet-body chart-view">
+							<table id="datatable-dynamics-by-days-chart" class="datatable-list table table-striped table-bordered">
+							    <thead>
+							        <tr>
+							            <th>
+							            	Campaign <span class="icon-question icon-small"></span>
+							            	<p>&nbsp;</p>
+							            </th>
+							            <th>
+							            	Impressions <span class="icon-question icon-small"></span>
+							            	<p>1,200</p>
+							            </th>
+							            <th>
+							            	Clicks <span class="icon-question icon-small"></span>
+							            	<p>500</p>
+							            </th>
+							            <th>
+							            	CTR <span class="icon-question icon-small"></span>
+							            	<p>50%</p>
+							            </th>
+							            <th>
+							            	Spent <span class="icon-question icon-small"></span>
+							            	<p>$7,200</p>
+							           	</th>
+							        </tr>
+							    </thead>
+							    <tbody>
+								    <tr>
+							    	    <td colspan="5">
+											<div class="dynamics-by-days-chart" style="width: 100%; height: 150px"></div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="portlet-body data-view">
+							<table id="datatable-dynamics-by-days-data" class="datatable-list table table-striped table-bordered">
+							    <thead>
+							        <tr>
+							            <th>
+							            	Campaign <span class="icon-question icon-small"></span>
+							            	<p>&nbsp;</p>
+							            </th>
+							            <th>
+							            	Impressions <span class="icon-question icon-small"></span>
+							            	<p>1,200</p>
+							            </th>
+							            <th>
+							            	Clicks <span class="icon-question icon-small"></span>
+							            	<p>500</p>
+							            </th>
+							            <th>
+							            	CTR <span class="icon-question icon-small"></span>
+							            	<p>50%</p>
+							            </th>
+							            <th>
+							            	Spent <span class="icon-question icon-small"></span>
+							            	<p>$7,200</p>
+							           	</th>
+							        </tr>
+							    </thead>
+							    <tbody>
+								    <tr>
+							    	    <td>Cleaning service</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>Remote toys</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>The Last Express</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>Sportswear</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>Fashion</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="portlet light statistics-block">
+						<div class="portlet-title">
+							<div class="row">
+								<div class="col-md-6 text-left">
+									<div class="caption caption-md">
+										<i class="icon-bar-chart theme-font hide"></i>
+										<h4 class="caption-subject theme-font bold uppercase inline-block">ADVERTISEMENT </h4>
+									</div>
+								</div>
+								<div class="col-md-6 text-right">
+									View: <a class="a-option active">Campaign</a><a class="a-option">Links</a>
+									<div class="btn-group dropdown">
+						     		   <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" style="box-shadow: none;">
+						    		        <span class="icon-equalizer icon-custom"></span>
+						     		   </a>
+						 		       <div class="dropdown-menu pull-right position-absolute form-group dropup-custom">
+						   		    		<div class="row">
+						   						<div class="col-md-6 form-group">
+								                    <li>
+								                        <label>
+															<input type="checkbox" class="">
+															CR2 (All)
+														</label>
+								                    </li>
+					                                <li>
+					                                    <label>
+															<input type="checkbox" class="">
+															CR2 (Deposites)
+														</label>
+					                                </li>
+			                                    </div>
+			                                   	<div class="col-md-6 form-group">
+													<li>
+														<label>
+															<input type="checkbox" class="">
+															CTR CR2 (Other target)
+														</label>
+				                                    </li>
+				                                    <li>
+				                                        <label>
+															<input type="checkbox" class="">
+															Other
+														</label>
+				                                    </li>
+				                                </div> 
+				                            </div>
+		                                    <div class="row">
+		                                        <div class="col-md-6">
+							                       	<button class="btn btn-primary">Save</button>
+						                       	</div>
+						                        <div class="col-md-6">
+						                            <button class="btn btn-default">Cancel</button>
+						                       	</div>
+						                    </div>
+						                </div>		
+			                       </div>	
+		                        </div>
+		                    </div>
+						</div>
+						<div class="portlet-body campaign-view">
+							<table id="datatable-advertisement-campaing" class="datatable-list table table-striped table-bordered">
+							    <thead>
+							        <tr>
+							            <th>
+							            	Campaign <span class="icon-question icon-small"></span>
+							            	<p>&nbsp;</p>
+							            </th>
+							            <th>
+							            	Impressions <span class="icon-question icon-small"></span>
+							            	<p>1,200</p>
+							            </th>
+							            <th>
+							            	Clicks <span class="icon-question icon-small"></span>
+							            	<p>500</p>
+							            </th>
+							            <th>
+							            	CTR <span class="icon-question icon-small"></span>
+							            	<p>50%</p>
+							            </th>
+							            <th>
+							            	Spent <span class="icon-question icon-small"></span>
+							            	<p>$7,200</p>
+							           	</th>
+							        </tr>
+							    </thead>
+							    <tbody>
+								    <tr>
+							    	    <td>Cleaning service</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>Remote toys</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>The Last Express</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>Sportswear</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>Fashion</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="portlet-body links-view">
+							<table id="datatable-advertisement-links" class="datatable-list table table-striped table-bordered">
+							    <thead>
+							        <tr>
+							            <th>
+							            	Links <span class="icon-question icon-small"></span>
+							            	<p>&nbsp;</p>
+							            </th>
+							            <th>
+							            	Impressions <span class="icon-question icon-small"></span>
+							            	<p>1,200</p>
+							            </th>
+							            <th>
+							            	Clicks <span class="icon-question icon-small"></span>
+							            	<p>500</p>
+							            </th>
+							            <th>
+							            	CTR <span class="icon-question icon-small"></span>
+							            	<p>50%</p>
+							            </th>
+							            <th>
+							            	Spent <span class="icon-question icon-small"></span>
+							            	<p>$7,200</p>
+							           	</th>
+							        </tr>
+							    </thead>
+							    <tbody>
+								    <tr>
+							    	    <td>Great Taste, Less Filling</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>Get a Mac</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>Transformers</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>Got Milk?</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>Just Do It</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>Toy wapons</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>Marlboro Man</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>Real Beauty</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>Computer game</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>Hearthstone decks</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="portlet light statistics-block">
+						<div class="portlet-title">
+							<div class="row">
+								<div class="col-md-6 text-left">
+									<div class="caption caption-md">
+										<i class="icon-bar-chart theme-font hide"></i>
+										<h4 class="caption-subject theme-font bold uppercase inline-block">BY COUNTRY </h4>
+									</div>
+								</div>
+								<div class="col-md-6 text-right">
+									View: <a class="a-option active">Chart</a><a class="a-option">Data</a>
+									<div class="btn-group dropdown">
+						     		   <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" style="box-shadow: none;">
+						    		        <span class="icon-equalizer icon-custom"></span>
+						     		   </a>
+						 		       <div class="dropdown-menu pull-right position-absolute form-group dropup-custom">
+						   		    		<div class="row">
+						   						<div class="col-md-6 form-group">
+								                    <li>
+								                        <label>
+															<input type="checkbox" class="">
+															CR2 (All)
+														</label>
+								                    </li>
+					                                <li>
+					                                    <label>
+															<input type="checkbox" class="">
+															CR2 (Deposites)
+														</label>
+					                                </li>
+			                                    </div>
+			                                   	<div class="col-md-6 form-group">
+													<li>
+														<label>
+															<input type="checkbox" class="">
+															CTR CR2 (Other target)
+														</label>
+				                                    </li>
+				                                    <li>
+				                                        <label>
+															<input type="checkbox" class="">
+															Other
+														</label>
+				                                    </li>
+				                                </div> 
+				                            </div>
+		                                    <div class="row">
+		                                        <div class="col-md-6">
+							                       	<button class="btn btn-primary">Save</button>
+						                       	</div>
+						                        <div class="col-md-6">
+						                            <button class="btn btn-default">Cancel</button>
+						                       	</div>
+						                    </div>
+						                </div>		
+			                       </div>	
+		                        </div>
+		                    </div>
+						</div>
+						<div class="portlet-body chart-view">
+							<table id="datatable-by-country-chart" class="datatable-list table table-striped table-bordered">
+							    <thead>
+							        <tr>
+							            <th>
+							            	Campaign <span class="icon-question icon-small"></span>
+							            	<p>&nbsp;</p>
+							            </th>
+							            <th>
+							            	Impressions <span class="icon-question icon-small"></span>
+							            	<p>1,200</p>
+							            </th>
+							            <th>
+							            	Clicks <span class="icon-question icon-small"></span>
+							            	<p>500</p>
+							            </th>
+							            <th>
+							            	CTR <span class="icon-question icon-small"></span>
+							            	<p>50%</p>
+							            </th>
+							            <th>
+							            	Spent <span class="icon-question icon-small"></span>
+							            	<p>$7,200</p>
+							           	</th>
+							        </tr>
+							    </thead>
+							    <tbody>
+							    	<tr>
+							    		<td colspan="5">
+							    			<div id="vmap" style="width: 100%; height: 400px;"></div>
+							    		</td>
+							    	</tr>
+							    </tbody>
+							</table>
+							
+						</div>
+						<div class="portlet-body data-view">
+							<table id="datatable-by-country-data" class="datatable-list table table-striped table-bordered">
+							    <thead>
+							        <tr>
+							            <th>
+							            	Campaign <span class="icon-question icon-small"></span>
+							            	<p>&nbsp;</p>
+							            </th>
+							            <th>
+							            	Impressions <span class="icon-question icon-small"></span>
+							            	<p>1,200</p>
+							            </th>
+							            <th>
+							            	Clicks <span class="icon-question icon-small"></span>
+							            	<p>500</p>
+							            </th>
+							            <th>
+							            	CTR <span class="icon-question icon-small"></span>
+							            	<p>50%</p>
+							            </th>
+							            <th>
+							            	Spent <span class="icon-question icon-small"></span>
+							            	<p>$7,200</p>
+							           	</th>
+							        </tr>
+							    </thead>
+							    <tbody>
+								    <tr>
+							    	    <td>Cleaning service</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>Remote toys</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>The Last Express</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>Sportswear</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								    <tr>
+							    	    <td>Fashion</td>
+							    	    <td>600</td>
+							    	    <td>300</td>
+							    	    <td>50%</td>
+							    	    <td>$700</td>
+								    </tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END PAGE CONTENT INNER -->
+		</div>
+	</div>
+	<!-- END PAGE CONTENT -->
+</div>
+<!-- END PAGE CONTAINER -->
+
+<div class="scroll-to-top">
+	<i class="icon-arrow-up"></i>
+</div>
+<div class="show-block">
+	<a class="btn btn-primary show-btn">Show</a><a class="btn btn-default cancel-btn">Cancel</a>
+</div>
+<!-- END FOOTER -->
+<!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- BEGIN CORE PLUGINS -->
+<!--[if lt IE 9]>
+<script src="../../assets/global/plugins/respond.min.js"></script>
+<script src="../../assets/global/plugins/excanvas.min.js"></script> 
+<![endif]-->
+<script src="../../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="../../assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/nouislider/nouislider.js" type="text/javascript"></script>
+<script src="../../assets/global/plugins/bootstrap-fileinput/bootstrap-fileinput.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="../../assets/global/plugins/jqvmap/jqvmap/jquery.vmap.js"></script>
+<script type="text/javascript" src="../../assets/global/plugins/jqvmap/jqvmap/maps/jquery.vmap.world.js" charset="utf-8"></script>
+
+<!-- END CORE PLUGINS -->
+<script src="../../assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout3/scripts/layout.js" type="text/javascript"></script>
+<script src="../../assets/admin/layout3/scripts/demo.js" type="text/javascript"></script>
+
+
+
+<script src="http://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../../assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js"></script>
+
+<script src="../../assets/global/plugins/dropzone/dropzone.js"></script>
+<script src="../../assets/global/plugins/flot/jquery.flot.js"></script>
+<script src="../../assets/global/plugins/flot/jquery.flot.resize.min.js"></script>
+<script src="../../assets/global/plugins/flot/jquery.flot.pie.min.js"></script>
+<script src="../../assets/global/plugins/flot/jquery.flot.stack.min.js"></script>
+<script src="../../assets/global/plugins/flot/jquery.flot.crosshair.min.js"></script>
+<script src="../../assets/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="../../assets/global/plugins/bootstrap-daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="../../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+
+<script>
+	$('.daterange').daterangepicker({
+
+	}, 
+	function(start, end, label) {
+	    console.log("A new date range was chosen: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+	});
+	$(".ranges, .show-block").hide();
+	$("#datatable-advertisement-campaing, #datatable-dynamics-by-days-data,  #datatable-by-country-data, #datatable-advertisement-links").DataTable({
+		"searching": false
+	});
+	$.plot(".dynamics-by-days-chart", [ {  data: [ [10, 300], [17, 20], [27, 100], [37, 600], [57, 400], [87, 200] ] }], {
+                    series: {
+                        shadowSize: 1
+                    },
+                    lines: {
+                        show: true,
+                        lineWidth: 1,
+                        fill: true,
+                        fillColor: {
+                            colors: [{
+                                opacity: 0.1
+                            }, {
+                                opacity: 0.3
+                            }]
+                        }
+                    },
+                    points: {
+                            show: true,
+                            fill: true,
+                            radius: 4,
+                            lineWidth: 2
+                    	},
+                    yaxis: {
+                        min: 0,
+                        max: 600,
+                        tickColor: "#eee",
+                        tickFormatter: function(v) {
+                            return v;
+                        }
+                    },
+                    xaxis: {
+                        show: false,
+                    },
+                    colors: ["#2458C5"],
+                    grid: {
+                        tickColor: "#eee",
+                        borderWidth: 0,
+                    }
+                });
+
+	var ElementsArrayNotFull = [{
+		category: "campaing",
+		data: [{
+			name: "element1",
+			subcategory: "subcategory#1"
+		},
+		{
+			name: "element2",
+			subcategory: "subcategory#1"
+		},
+		{
+			name: "element3",
+			subcategory: "subcategory#1"
+		},
+		{
+			name: "element4",
+			subcategory: "subcategory#1"
+		},
+		{
+			name: "element5",
+			subcategory: "subcategory#1"
+		}]
+	}];
+
+	var ElementsArrayFull = [{
+		category: "campaing",
+		data: [{
+			name: "element1",
+			subcategory: "subcategory#1"
+		},
+		{
+			name: "element2",
+			subcategory: "subcategory#1"
+		},
+		{
+			name: "element3",
+			subcategory: "subcategory#1"
+		},
+		{
+			name: "element4",
+			subcategory: "subcategory#1"
+		},
+		{
+			name: "element5",
+			subcategory: "subcategory#1"
+		},
+		{
+			name: "element6",
+			subcategory: "subcategory#2"
+		},
+		{
+			name: "element7",
+			subcategory: "subcategory#2"
+		},
+		{
+			name: "element8",
+			subcategory:  "subcategory#2"
+		},
+		{
+			name: "element10",
+			subcategory: "subcategory#2"
+		},
+		{
+			name: "element11",
+			subcategory:  "subcategory#2"
+		},
+		{
+			name: "element12",
+			subcategory: "subcategory#2"
+		}]
+	}];
+
+
+	function showBlock(element, attr_value){
+		$(".show-block").hide();
+		$(".show-block").attr("parent_val", attr_value);
+		$(".show-block").css("top", $(element).offset().top-6).css("left", $(element).offset().left+$(element).width()+50);
+		$(".show-block").show();
+	}
+	var ChoosenElements = [];
+	function porcessData(CategoryName, ElementsArray){
+		function compare(a,b) {
+			if (a.subcategory < b.subcategory)
+				return -1;
+			if (a.subcategory > b.subcategory)
+		    	return 1;
+		}
+
+		ElementsArray.sort(compare);
+
+		
+		var InsertBuffer="";
+
+		var numOfElements = (ElementsArray.length>5)? 5:ElementsArray.length;
+		for(var i = 0; i<numOfElements; i++){
+			InsertBuffer+="<li data-id="+(i+1)+" data-value="+ElementsArray[i].name+">"+ElementsArray[i].name+"</li>";	
+		}
+		$(".left-menu.most-popular").html(InsertBuffer);
+		InsertBuffer="";
+		var prevElement="";
+		for(var i = 0; i<ElementsArray.length; i++){
+			if(prevElement!=ElementsArray[i].subcategory){
+				InsertBuffer+="<li class='subcategory'>"+ElementsArray[i].subcategory+"</li>";
+				prevElement=ElementsArray[i].subcategory;
+			}
+			InsertBuffer+="<li data-id="+(i+1)+" data-value="+ElementsArray[i].name+">"+ElementsArray[i].name+"</li>";	
+		}
+		$(".left-menu.full-list").html(InsertBuffer);
+		InsertBuffer="";
+
+
+
+
+		function responseSearchForm(element){
+			setTimeout(function(){
+					$(element).removeClass("fa-spinner fa-pulse").addClass("fa-times");
+				}, 1000);
+		}
+		function processChoosenElement(element){
+			/*
+			$.post(
+			  "/porcess.php",
+			  {
+			    
+			  },
+			  onAjaxSuccess
+			);
+			 
+			function onAjaxSuccess(data){
+		
+			}
+			*/
+		}
+		
+		$("#"+CategoryName+" .left-menu > li").live("click", function(){
+			if(!$(this).hasClass("selected-list-element")){
+				if($(this).parent().hasClass("most-popular")){
+					$(".most-popular > li:first-child").before(this);
+				}
+				else{
+					if($(this).attr("data-id") < (numOfElements)){
+						$(".most-popular > li:first-child").before($(".most-popular > [data-value='"+$(this).html()+"']"));
+					}
+					else{
+						$(this).clone().insertAfter(".most-popular > li:first-child");
+					}
+				}
+				$("[data-value='"+$(this).html()+"']").addClass("selected-list-element");
+				ChoosenElements.push($(this).html());
+				processChoosenElement(this);
+			}
+		});
+		$("#"+CategoryName+" .left-menu > li").live("dblclick", function(){
+			if($(this).hasClass("selected-list-element")){
+				$("[data-value='"+$(this).html()+"']").removeClass("selected-list-element");
+				if($(this).attr("data-id")>(numOfElements)){
+					$(".most-popular > [data-id="+$(this).attr("data-id")+"]").remove();
+				}
+				var index = ChoosenElements.indexOf($(this).html());
+			    if (index > -1) {
+			       ChoosenElements.splice(index, 1);
+			    }
+			    $(".show-block").hide();
+			    $(".show-block").attr("parent_val", "");
+			}
+		});
+			
+		$(".left-menu-search > .fa-search").live("click",function(){
+			if($(this).hasClass("fa-search")) {
+				$(this).removeClass("fa-search").addClass("fa-spinner fa-pulse");
+				$(this).parent().parent().find(".full-list > li, .subcategory, .bottom-border").hide();
+				
+				$(this).parent().parent().find(".full-list > li:contains("+$(this).parent().find("input").val()+"):not(.subcategory)").show();
+
+				responseSearchForm(this);
+				$(".show-block").hide();
+				$(".show-block").attr("parent_val", "");
+			}		
+		});
+		$(".left-menu-search > .fa-times").live("click",function(){
+			$(this).parent().parent().find(".full-list > li, .subcategory, .bottom-border").show();
+			$(this).removeClass("fa-times").addClass("fa-search");
+			$(this).parent().find("input").val("");
+			$(".show-block").hide();
+			$(".show-block").attr("parent_val", "");
+		});
+	}
+	function NotExtendedListUpload(){
+		//ajax request
+		for(var i=0; i <ElementsArrayNotFull.length;i++){
+			porcessData(ElementsArrayNotFull[i].category, ElementsArrayNotFull[i].data);
+		}
+	}				
+	NotExtendedListUpload();
+	function ExtendedListUpload(category){
+		
+		// ajax request
+
+		for(var i =0; i<ElementsArrayFull.length;i++){
+			if(ElementsArrayFull[i].category == category){
+				porcessData(category, ElementsArrayFull[i].data);
+				break;
+			}
+		}
+	}
+
+
+
+	$(".left-menu-option-block > .left-menu > li:not('.subcategory, .selected-list-element')").live("click",function(){
+		showBlock(this, $(this).attr("data-value"));
+	});
+	$(".show-block .show-btn").live("click", function(){
+		$(".show-block").hide();
+		$(".show-block").attr("parent_val", "");
+	});
+	$(".show-block .cancel-btn").live("click", function(){
+		$(".show-block").hide();
+		$("[data-value='"+$(this).parent().attr("parent_val")+"']").removeClass("selected-list-element");
+		var index = ChoosenElements.indexOf($(this).parent().attr("parent_val"));
+			if (index > -1) {
+		    ChoosenElements.splice(index, 1);
+		}
+		$(".show-block").attr("parent_val", "");
+	});
+	
+	$(".btn-left-menu").click(function(){
+		$(this).parent("div").parent("div").toggleClass("more-active");
+		$(this).parent("div").parent("div").find(".left-menu-search").toggle();
+		//$(this).parent("div").parent("div").find(".bottom-border").toggle();
+		$(this).parent("div").parent("div").find(".most-popular").toggle();
+		$(this).parent("div").parent("div").find(".full-list").toggle();
+		if($(this).html()=="Less") { 
+			$(this).html("More");
+		}
+		else{
+			if($(this).attr("data-used")!="true"){
+				ExtendedListUpload($(this).parent().parent().attr("id"));
+				
+				for(var i = 0 ; i< ChoosenElements.length;i++){
+					$("[data-value="+ChoosenElements[i]+"]").addClass("selected-list-element");
+				}
+			}
+			$(this).html("Less");
+			$(this).attr("data-used", "true");
+		}
+		
+	});
+	$(".left-menu-header").click(function(){
+		$(this).parent("div").find(".left-menu-option-block").toggle();
+		$(this).parent("div").find(".left-menu-option-block").toggleClass("active");
+		$(this).find("i").toggleClass("fa-minus");
+		$(this).find("i").toggleClass("fa-plus");
+
+		if($(this).parent("div").find(".left-menu-option-block").hasClass("active")){
+			$(".full-list, .left-menu-search").hide();
+			$(".most-popular").show();
+			$(".btn-left-menu").html("More");
+		}
+		else{
+			$(".full-list, .left-menu-search").hide();
+			$(".most-popular").show();
+			$(".btn-left-menu").html("More");
+		}
+	});
+
+	$(".data-view, .links-view, .full-list, .left-menu-search, .left-menu-option-block").hide();
+    
+	$(".a-option").click(function(){
+		if(!$(this).hasClass("active")){
+			$(this).siblings(".a-option").removeClass("active");
+			$(this).addClass("active");
+			$(this).parent("div").parent("div").parent("div").parent(".portlet").find(".portlet-body").toggle();
+		}
+	});
+
+	$('#vmap').vectorMap({ map: 'world_en' });
+
+    jQuery(document).ready(function() {
+      jQuery(document).ready(function() {    
+        	Metronic.init(); // init metronic core components
+			Layout.init(); // init current layout
+			Demo.init(); // init demo features
+    	});
+    });
+
+</script>
+<!-- END JAVASCRIPTS -->
+</body>
+<!-- END BODY -->
+</html>

@@ -1,0 +1,249 @@
+/*
+ fonts import
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700,900&subset=cyrillic');
+@font-face {
+  font-family: 'GothamPro';
+  src: url('../../../fonts/GothamPro-Bold.otf');
+}
+
+/* here you can put your own css to customize and override the theme */
+
+/***
+Rounded Portlets
+***/
+/*
+.portlet {
+	border-radius: 4px !important;
+}
+
+.portlet .portlet-title {
+	border-radius: 4px 4px 0px 0px !important;
+}
+
+.portlet .portlet-body,
+.portlet .portlet-body .form-actions  {
+	border-radius: 0px 0px 4px 4px !important;
+}
+*/
+/*
+Custom fonts
+*/
+.logo-font{
+  font-family: 'GothamPro';
+  color: #1e44a6;
+  font-size: 28px;
+  line-height: 75px;
+}
+.logo-font:hover{
+  text-decoration: none;
+  color: #1e44a6;
+}
+.intro-text{
+  font-size: 20px;
+}
+.header-create-camp-btn{
+  margin-right: 20px;
+}
+
+.balance{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #525e64;
+}
+.balance-count{
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  color: #337ab7;
+}
+.main-button-create-camp{
+  width: 300px; height: 65px; border-radius: 3px;
+}
+.create-new-capm-li{
+  line-height: 54px;
+}
+
+
+.caption-subject{
+  font-family: 'Roboto', sans-serif;
+}
+.underline-text{
+  font-size: 13px;
+  margin: 0;
+  margin-left: 5px;
+  font-family: 'Roboto', sans-serif;
+  color: #aaa;
+  border-bottom: 1.5px dashed #ccc;
+}
+.pointer{
+  cursor: pointer;
+}
+.p-top-text, .p-bottom-text, .p-price{
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #525e64;
+}
+.p-price-danger{
+	font-size: 22px;
+  	font-weight: 500;
+	font-family: 'Roboto', sans-serif;
+	color: #d91e18;
+}
+.p-top-text{
+  font-size: 14px;
+}
+.p-price{
+  font-size: 22px;
+  font-weight: 500;
+}
+.border-right{
+  border-right: 1px #ccc solid;
+}
+.inline-block{
+  display: inline-block;
+}
+
+.block-footer-table > tbody > tr > td{
+	font-weight: bold;
+	border-right: 1px #ddd solid;
+}
+.block-footer-table > tbody > tr > td:nth-child(9){
+	border-right: 0
+}
+
+.icon-custom{
+	cursor: pointer;
+	border-radius: 50%;
+	border: 1px solid #a6b0c0;
+	padding: 8px;
+	color: #a6b0c0;
+}
+.custom-dropdown{
+	position: absolute;
+	top: 30px;
+	right: 50px;
+}
+.open > a > .icon-custom{
+	background:#32c5d2;
+	background: 1px solid #32c5d2;
+	color:#fff;
+}
+.icon-plus-custom{
+	cursor: pointer;
+	margin-top: 10px; 
+	font-size: 26px;
+	color:#a6b0c0;
+}
+.icon-small{
+	font-size: 10px;
+	color: #bbb;
+}
+p{
+	color:#525e64;
+	margin: 0;
+}
+.btn-xs .badge{
+	padding: 4px 5px;
+	background-color: transparent;
+	margin-left: 5px; 
+	color: #525e64;
+}
+.table{
+	margin-bottom: 0;
+}
+.block-footer-text{
+	margin: 0;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+}
+.add-link-btn{
+	float: right;
+	margin-right: 20px; 
+}
+.big-text{
+	font-size: 20px;
+}
+
+
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #FFFFFF; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 15px; padding: 0; line-height: 15px;
+    font-size: 19px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "";
+    padding-left: 10px;
+    background-color: #00DBC9; color: #00DBC9;
+}
+.onoffswitch-inner:after {
+    content: "";
+    padding-right: 10px;
+    background-color: #CFCFCF; color: #9C9C9C;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 24px; margin: -4.5px;
+    background: #00C4B7;
+    position: absolute; top: 0; bottom: 0;
+    right: 71px;
+    border: 2px solid #FFFFFF; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+.bid{
+	margin-left: 10px;
+}
+.block-footer-table.active{
+	background-color: #f3f4f6;
+
+}
+
+
+.geography{
+	height: 200px;
+	background-color: rgba(247, 202, 24,0.1);
+	
+	border-top: 2px dashed #ccc;
+	border-bottom: 2px dashed #ccc;
+	padding:10px;
+	margin-top: 10px; 
+}
+.inner-block-header{
+	font-family: 'Roboto',sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #112f7d;
+}
+.full-width{
+	width:150px;
+}
+.inner-sub-header{
+	font-family: 'Roboto',sans-serif;
+	font-size: 14px;
+	color: #333333;
+}
