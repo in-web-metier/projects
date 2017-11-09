@@ -1,0 +1,50 @@
+
+@media (max-width: 1215px) {
+	 header .nav-1 {
+  	float: left !important;
+  }
+
+  header .nav-2 {
+    margin-left: 40px;
+    float: right !important;
+	}
+}
+
+@media screen and (max-width:550px) {
+	header .logo-wrap {
+   padding-left: 10px;}
+   
+  .navbar-toggle {
+    margin-right: 10px;
+	}
+
+	header h1 {
+	  font-size: 35px;
+	  margin: 10px;
+	  margin-bottom: 50px}
+}
+
+@media screen and (max-width:420px) {
+	header .nav-1,
+	header .nav-2 {
+		margin: 0;
+	}
+}
+
+
+@media screen and (max-width:350px) {
+	header .logo-wrap  {
+    width: 250px;
+    margin-left: 30px;
+	}
+
+	header .logo-wrap span {
+    font-weight: 500;
+    line-height: 1.4;
+	}
+
+	.company {
+
+	}
+	
+}
